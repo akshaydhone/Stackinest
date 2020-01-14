@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.stackinest">
-    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -9,21 +8,21 @@
         android:label="StackInest"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.stackinest.SignIn">
-
+        <activity android:name=".HomeActivity"></activity>
+        <activity android:name=".SignIn">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.stackinest.SignUp"
-            android:parentActivityName="com.example.stackinest.SignIn"/>
-        <activity android:name="com.example.stackinest.MainActivity">
-
-        </activity>
+        <activity
+            android:name=".SignUp"
+            android:parentActivityName=".SignIn" />
+        <activity android:name=".MainActivity"></activity>
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

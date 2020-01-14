@@ -130,6 +130,7 @@
                 android:src="@drawable/fb_ic" />
 
             <com.google.android.gms.common.SignInButton
+                android:id="@+id/google_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
