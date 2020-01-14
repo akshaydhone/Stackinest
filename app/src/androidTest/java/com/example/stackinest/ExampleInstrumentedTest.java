@@ -1,4 +1,4 @@
-package com.example.onscreen;
+package com.example.stackinest;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

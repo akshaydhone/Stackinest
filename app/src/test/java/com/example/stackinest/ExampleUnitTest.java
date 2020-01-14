@@ -1,4 +1,4 @@
-package com.example.onscreen;
+package com.example.stackinest;
 
 import org.junit.Test;
 

@@ -4,17 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login_bg"
+android:background="#fff"
     android:orientation="vertical"
     tools:context=".SignIn">
 
     <ImageView
-        android:layout_width="210dp"
-        android:layout_height="194dp"
+        android:id="@+id/i1"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
         android:layout_gravity="center"
-        android:layout_marginTop="84dp"
-        android:src="@drawable/logo" />
+        android:layout_marginTop="10dp"
+        android:src="@drawable/stack" />
 
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/i1">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -30,7 +36,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="14dp"
             android:fontFamily="@font/kanit_medium"
-            android:text="Hello"
+            android:text="Welcome"
             android:textColor="#3f4658"
             android:textSize="38dp" />
 
@@ -120,12 +126,18 @@
             <ImageView
                 android:layout_width="28dp"
                 android:layout_height="32dp"
+                android:visibility="gone"
                 android:src="@drawable/fb_ic" />
+
+            <com.google.android.gms.common.SignInButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
 
             <ImageView
                 android:layout_width="28dp"
                 android:layout_height="32dp"
                 android:layout_marginLeft="18dp"
+                android:visibility="gone"
                 android:src="@drawable/tw_ic" />
 
         </LinearLayout>
@@ -148,15 +160,17 @@
 
             <TextView
                 android:layout_width="wrap_content"
-
+android:id="@+id/reg_btn"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="12dp"
                 android:fontFamily="@font/kanit_regular"
                 android:text="Register Now"
                 android:textColor="#ff7c17"
+
                 android:textSize="18dp" />
         </LinearLayout>
 
     </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
