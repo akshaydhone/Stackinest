@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".HomeActivity"></activity>
+        <activity android:name=".SelectFieldActivity"></activity>
+        <activity android:name=".HomeActivity" />
         <activity android:name=".SignIn">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,7 +21,7 @@
         <activity
             android:name=".SignUp"
             android:parentActivityName=".SignIn" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />
